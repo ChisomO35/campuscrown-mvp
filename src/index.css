@@ -4,16 +4,49 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --bg-cream: #F5F1EC;
+  --text-deep-brown: #4A2F24;
+  --cta-burgundy: #8B3A34;
+  --accent-gold: #D4A94F;
+  --card-sand: #E8E1D8;
+  --link-blue: #2F4A7A;
+  --text-soft-black: #1A1A1A;
+  --text-warm-grey: #A8A29E;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #efe9f7;
+  background-color: var(--bg-cream);
+  color: var(--text-deep-brown);
+}
+
+a {
+  color: var(--link-blue);
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+/* Typography Overrides */
+h1,
+.mantine-Title-root[data-order="1"] {
+  font-family: 'Playfair Display', serif !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.mantine-Title-root[data-order="2"],
+.mantine-Title-root[data-order="3"],
+.mantine-Title-root[data-order="4"],
+.mantine-Title-root[data-order="5"],
+.mantine-Title-root[data-order="6"] {
+  font-family: 'Libre Baskerville', serif !important;
+  font-weight: 500;
 }
